@@ -2,7 +2,7 @@
 
 A utility to download census polygons and attribute tables, then merge them.
 
-A recurring need we have had, is to download census areas (blocks) then join them to attribute tables (number of males, number of people, mean income). Doing this using ArcMap has proven tedious and error-prone: the fields come in with unintuitive names such as P6i1 instead of TotPop, dropping a column hangs for a few seconds, adding a new "PctMale" field based on "Male divided by TotPop" involves several steps since you need to also account for division by zero.
+A recurring need we have had, is to download census areas (blocks) then join them to attribute tables (number of males, number of people, mean income). Doing this using ArcMap has proven tedious and error-prone: the fields come in with unintuitive names such as P6i1 instead of TotPop, dropping a column hangs for a few seconds and we drop the large majority of them for any given use case, adding a new "PctMale" field based on "Male divided by TotPop" involves several steps since you need to also account for division by zero.
 
 So, this specific need distilled down into a single script: Run one command, come back 10 minutes later to the dataset waiting for you: renamed fields, extraneous fields dropped, tract attributes mapped down to the individual blocks...
 
